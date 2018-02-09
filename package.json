@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "bin":{
-    "yang-cli": "./yang-cli"
+    "yangster-cli": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "bin":{
-    "yangester-cli": "./bin/yangester-cli.js"
+    "yangester-cli": "./bin/yangester-cli.js",
+    "con": "./bin/test.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

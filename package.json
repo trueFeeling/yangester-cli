@@ -1,11 +1,10 @@
 {
-  "name": "yangester-cli",
-  "version": "0.0.3",
+  "name": "yang",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
-  "bin":{
-    "yangester-cli": "./bin/yangester-cli.js",
-    "con": "./bin/test.js"
+  "bin": {
+    "yang": "./bin/yangester-cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/trueFeeling/yangester-cli/issues"
   },
-  "homepage": "https://github.com/trueFeeling/yangester-cli#readme"
+  "homepage": "https://github.com/trueFeeling/yangester-cli#readme",
+  "dependencies": {
+    "commander": "^2.14.1",
+    "yargs": "^11.0.0"
+  }
 }

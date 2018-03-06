@@ -1,7 +1,7 @@
 {
-  "name": "yang",
-  "version": "0.0.4",
-  "description": "",
+  "name": "yangester-cli",
+  "version": "1.0.0",
+  "description": "```bash\r //install\r # npm install -g yangester-cli",
   "main": "index.js",
   "bin": {
     "yang": "./bin/yangester-cli.js"
@@ -20,7 +20,10 @@
   },
   "homepage": "https://github.com/trueFeeling/yangester-cli#readme",
   "dependencies": {
-    "commander": "^2.14.1",
-    "yargs": "^11.0.0"
-  }
+    "commander": "^2.14.1"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {}
 }

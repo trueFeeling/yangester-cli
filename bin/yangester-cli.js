@@ -34,9 +34,6 @@ program
             dir.push(...otherDirs);
         }
         mkdir(dir)
-            .then(dir => {
-                console.log(dir, ': been created successfully')
-            })
             .catch(e => {
                 console.log(e)
             });
@@ -64,9 +61,6 @@ program.command('cp <src> <dest>')
     .option('-i, --info', 'ask permission when there has been the same thing in the dest')
     .action((src, dest, cmd) => {
         cp(src, dest, cmd)
-            .then(() => {
-                console.log('successfully')
-            })
             .catch(e => {
                 console.log(e)
             })

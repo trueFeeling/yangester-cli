@@ -1,6 +1,6 @@
 {
   "name": "yangester-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "```bash\r //install\r # npm install -g yangester-cli",
   "main": "index.js",
   "bin": {

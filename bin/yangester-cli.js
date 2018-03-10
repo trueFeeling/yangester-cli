@@ -5,6 +5,8 @@ const rm = require('../lib/rm');
 const path = require('path');
 const cp = require('../lib/copy');
 const mkdir = require('../lib/mkdir');
+const re = require('../lib/rename');
+const vue = require('../lib/vue');
 /**
  * touch 创建新文件
  */
@@ -64,6 +66,26 @@ program.command('cp <src> <dest>')
             .catch(e => {
                 console.log(e)
             })
+    });
+
+/**
+ * 修改文件名
+ */
+
+program.command('re <name> <newName>')
+    .action((name, newName) => {
+        re(name, newName)
+            .catch(e => {
+                console.log(e)
+            })
+    });
+/**
+ * 初始化项目
+ */
+
+program.command('vue <name>')
+    .action(name => {
+        vue(name).catch(e=>console.log(e));
     });
 
 program.parse(process.argv)

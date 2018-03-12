@@ -26,6 +26,12 @@
 
 // create directories
 # yang mkdir a b c
+
+// init your vue project
+# yang npm vue <yourprojectname>
+# cd <yourprojectname>
+# npm init
+# npm run dev
 ```
 ## 参考
 - [Official Node.js API Docs](https://nodejs.org/dist/latest-v8.x/docs/api/)
